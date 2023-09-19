@@ -1,0 +1,211 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="cargill.ui5.ahms.EquipmentAnalysis.controller.Analysis"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout"
+	xmlns="sap.m" 
+	displayBlock="true" >
+
+		<Page
+			title="{i18n>title}"
+			showNavButton="true"
+			navButtonPress="onNavBack" >
+
+			<content>
+
+				<ObjectHeader
+					responsive="true"
+					fullScreenOptimized="true"
+					icon="sap-icon://product"
+					binding="{Asset>/}"
+					title="{Asset>CmmsEquipmentDescription}"
+					intro="Equipment Class: {Asset>EquipmentClass}" >
+					<attributes>
+						<ObjectAttribute
+							title="Enterprise"
+							text="{Asset>EnterpriseId}"/>
+						<ObjectAttribute
+							title="Technology"
+							text="{Asset>TechnologyId}"/>
+						<ObjectAttribute
+							title="Plant"
+							text="{Asset>PlantId}"/>
+					</attributes>
+				</ObjectHeader>
+
+				<Wizard id="idWizard"
+					height="4.2em"
+					showNextButton="false"
+					complete="onWizardComplete"
+					steps="{path: 'Category>/'}" >
+					<steps>
+						<WizardStep
+							title="{Category>Name}"
+							validated="false" />
+					</steps>
+				</Wizard>
+
+				<layout:VerticalLayout
+					class="equalColumns"
+					width="100%" >
+					<layout:content>
+
+						<FlexBox
+							width="100%"
+							alignItems="Stretch">
+							<items>
+
+								<Table id="idQuestionTable"
+									noDataText="No Questions Defined"
+									mode="SingleSelectMaster"
+									selectionChange="onQuestionRowSelect"
+									updateFinished="onQuestionUpdate"
+									items="{
+										path: 'Question>/',
+										sorter: {
+											path: 'Text'
+										}
+									}" >
+
+									<headerToolbar>
+										<Toolbar
+											styleClass="toolbarBorderAll" >
+											<content>
+												<Title
+													level="H2"
+													text="Questions" />
+												<ToolbarSpacer />
+											</content>
+										</Toolbar>
+									</headerToolbar>
+
+									<columns>
+										<Column
+											hAlign="Start"
+											vAlign="Middle" />
+										<Column
+											width="3em"
+											hAlign="End"
+											styleClass="questionButtonColumn" />
+									</columns>
+
+									<items>
+										<ColumnListItem
+											vAlign="Middle"
+											type="Active">
+											<cells>
+												<Text
+													text="{Question>Text}" />
+												<Button
+													type="Transparent"
+													icon="{= ${Question>AnswerId} ? 'sap-icon://accept' : 'sap-icon://navigation-right-arrow' }"
+													visible="false"
+													enabled="false"
+													press="" />
+											</cells>
+										</ColumnListItem>
+									</items>
+
+									<layoutData>
+										<FlexItemData growFactor="1" />
+									</layoutData>
+								</Table>
+
+								<Table id="idAnswerTable"
+									noDataText="No Answers Found"
+									mode="SingleSelectLeft"
+									selectionChange="onAnswerSelect"
+									updateFinished="onAnswerUpdate"
+									items="{
+										path: 'Answer>/',
+										sorter: {
+											path: 'Weight'
+										}
+									}" >
+
+									<headerToolbar>
+										<Toolbar
+											styleClass="toolbarBorderAll" >
+											<content>
+												<Title
+													level="H2"
+													text="Answers" />
+												<ToolbarSpacer />
+											</content>
+										</Toolbar>
+									</headerToolbar>
+
+									<columns>
+										<Column id="idAnswerColumn1"
+											width="10%"
+											hAlign="Start"
+											vAlign="Middle" />
+										<Column id="idAnswerColumn2"
+											width="15%"
+											hAlign="Start"
+											vAlign="Middle" />
+										<Column id="idAnswerColumn3"
+											hAlign="Start"
+											width="70%"
+											vAlign="Middle" />
+										<Column
+											width="3em"
+											hAlign="End"
+											styleClass="questionButtonColumn" />
+									</columns>
+
+									<items>
+										<ColumnListItem
+											vAlign="Middle"
+											type="Inactive">
+											<cells>
+												<core:Icon
+													color="{Answer>Color}"
+													src="sap-icon://color-fill" />
+												<Text
+													text="{Answer>Weight}%" />
+												<Text
+													text="{Answer>Text}" />
+												<Button
+													type="Transparent"
+													icon="sap-icon://sys-cancel"
+													visible="false"
+													press="onAnswerDeletePress" />
+											</cells>
+										</ColumnListItem>
+									</items>
+
+									<layoutData>
+										<FlexItemData growFactor="1" />
+									</layoutData>
+								</Table>
+
+							</items>
+						</FlexBox>
+
+					</layout:content>
+				</layout:VerticalLayout>
+
+			</content>
+
+			<footer>
+			    <Bar>
+			        <contentRight>
+						<!--
+			            <Button id="idBtnCancel"
+							text="{i18n>app_Cancel}"
+							press="onNavBack" />
+						-->
+			            <Button id="idBtnDone"
+							visible="false"
+							text="{i18n>app_Done}"
+							press="onNavBack" />
+			            <Button id="idBtnNext"
+							text="{i18n>app_Next}"
+							press="onNavNext" />
+			        </contentRight>
+			    </Bar>
+			</footer>
+
+		</Page>
+</mvc:View>

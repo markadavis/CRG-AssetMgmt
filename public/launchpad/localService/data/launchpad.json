@@ -1,0 +1,36 @@
+[
+	{
+		"LaunchpadId": "AHMS",
+		"Title": "Asset Health Management System",
+		"TileCollection" : [
+			{
+				"id" : "cargill.ui5.ahms.EquipmentList",
+				"icon" : "survey",
+				"type" : "None",
+				"number" : "89",
+				"numberUnit" : "",
+				"title" : "Equipment List",
+				"info" : "2 Overdue",
+				"infoState" : "Error"
+			}, {
+				"id" : "cargill.ui5.ahms.EquipmentAnalysis",
+				"icon" : "business-objects-experience",
+				"type" : "None",
+				"number" : "10,552",
+				"numberUnit" : "Equipments",
+				"title" : "Equipment Analysis",
+				"info" : "3 in process",
+				"infoState" : "Warning"
+			}, {
+				"id" : "cargill.ui5.ahms.EquipmentQuestions",
+				"icon" : "discussion-2",
+				"type" : "None",
+				"number" : "33",
+				"numberUnit" : "",
+				"title" : "Enterprise Standard Question",
+				"info" : "8 incomplete",
+				"infoState" : "Warning"
+			}
+		]
+	}
+]

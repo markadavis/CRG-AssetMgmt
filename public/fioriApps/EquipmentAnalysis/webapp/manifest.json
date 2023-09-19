@@ -1,0 +1,118 @@
+{
+	"_version": "1.7.0",
+	"sap.app": {
+		"id": "cargill.ui5.ahms.EquipmentAnalysis",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.38.11"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_bluecrystal"
+		]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "cargill.ui5.ahms.EquipmentAnalysis.view.App",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "cargill.ui5.ahms.EquipmentAnalysis.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewPath": "cargill.ui5.ahms.EquipmentAnalysis.view",
+				"controlId": "appControl",
+				"controlAggregation": "pages",
+				"viewType": "XML",
+				"async": true,
+				"bypassed": {
+	               "target": "main"
+	            }
+			},
+			"routes": [{
+				"pattern": "EquipmentAnalysis",
+				"name": "main",
+				"target": ["main"],
+				"greedy": false
+			}, {
+				"pattern": "Asset/{assetId}",
+				"name": "analysis",
+				"target": ["analysis"],
+				"parent": "main",
+				"greedy": false
+			}],
+			"targets": {
+				"main": {
+					"viewName": "Main",
+					"viewId": "idMain",
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewLevel": 1
+				},
+				"analysis": {
+					"viewName": "Analysis",
+					"viewId": "idAnalysis",
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewLevel": 2
+				},
+	            "notFound": {
+					"viewName": "NotFound",
+					"viewId": "idNotFoundView",
+					"viewType": "XML",
+					"transition": "show",
+					"viewLevel": 9
+			     }
+			}
+		}
+	}
+}

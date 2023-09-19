@@ -1,0 +1,76 @@
+<mvc:View
+	controllerName="cargill.ui5.ahms.launchpad.controller.Login"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout"
+	xmlns:form="sap.ui.layout.form" >
+
+	<Page id="idLoginPage"
+		showHeader="true"
+		title="Cargill User Authentication"
+		enableScrolling="false" >
+
+		<content>
+			<VBox class="sapUiSmallMargin">
+				<items>
+					<Text />
+					<Text />
+					<Text />
+					<form:SimpleForm
+						editable="true"
+						layout="ResponsiveGridLayout"
+						singleContainerFullSize="true"
+						labelSpanXL="3"
+						labelSpanL="3"
+						labelSpanM="3"
+						labelSpanS="12"
+						adjustLabelSpan="false"
+						emptySpanXL="4"
+						emptySpanL="4"
+						emptySpanM="4"
+						emptySpanS="0"
+						columnsXL="1"
+						columnsL="1"
+						columnsM="1" >
+
+						<form:content>
+
+							<Label
+								text="Cargill User ID" />
+							<Input
+								id="idLogonId"
+								value="{/userId}" />
+
+							<Label
+								text="Password" />
+							<Input
+								id="idLogonPassword"
+								type="Password"
+								value="{/password}" />
+
+							<Label />
+							<Button 
+								width="100%"
+								text="Login"
+								press="handleLoginPress" />
+
+						</form:content>
+					</form:SimpleForm>
+
+				</items>
+			</VBox>
+		</content>
+
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer />
+				<Button 
+					text="New User"
+					press="handleNewUserPress" />
+				</Toolbar>
+		</footer>
+
+	</Page>
+
+</mvc:View>

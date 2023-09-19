@@ -1,0 +1,13 @@
+<mvc:View
+	controllerName="cargill.ui5.ahms.launchpad.controller.FioriApp"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" >
+
+	<Page id="idFioriAppPage"
+		showHeader="false" >
+		<content>
+
+		</content>
+	</Page>
+
+</mvc:View>

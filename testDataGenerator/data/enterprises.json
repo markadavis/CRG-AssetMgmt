@@ -1,0 +1,21 @@
+[
+	{
+		"code": "0",
+		"text": "Enterprise Zero"
+	}, {
+		"code": "1",
+		"text": "Enterprise One"
+	}, {
+		"code": "2",
+		"text": "Enterprise Two"
+	}, {
+		"code": "3",
+		"text": "Enterprise Three"
+	}, {
+		"code": "4",
+		"text": "Enterprise Four"
+	},{
+		"code": "5",
+		"text": "Enterprise Five"
+	}
+]

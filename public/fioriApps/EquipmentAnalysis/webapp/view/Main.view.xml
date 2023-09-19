@@ -1,0 +1,171 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="cargill.ui5.ahms.EquipmentAnalysis.controller.Main"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout"
+	xmlns="sap.m" 
+	displayBlock="true" >
+
+		<Page
+			title="{i18n>title}"
+			showNavButton="true"
+			navButtonPress="onNavBack" >
+
+			<content>
+
+				<layout:Grid
+					class="sapUiSmallMargin"
+					defaultSpan="L4 M6 S8" >
+					<layout:content>
+						<VBox>
+							<Label text="Enterprise" />
+							<ComboBox id="idEnterprise"
+								selectionChange="onAssetChange"
+								selectedKey="{/AssetKey/EnterpriseId}"
+								items="{
+									path: 'Enterprise>/',
+										sorter: { path: 'text' }
+									}" >
+									<core:Item key="{Enterprise>code}" text="{Enterprise>text}" />
+							</ComboBox>
+						</VBox>
+						<VBox>
+							<Label text="Technology" />
+							<ComboBox id="idTechnology"
+								selectionChange="onAssetChange"
+								selectedKey="{/AssetKey/TechnologyId}"
+								items="{
+									path: 'Technology>/',
+										sorter: { path: 'text' }
+									}" >
+									<core:Item key="{Technology>code}" text="{Technology>text}" />
+							</ComboBox>
+						</VBox>
+						<VBox>
+							<Label text="Plant" />
+							<ComboBox id="idPlant"
+								selectionChange="onAssetChange"
+								selectedKey="{/AssetKey/PlantId}"
+								items="{
+									path: 'Plant>/',
+										sorter: { path: 'text' }
+									}" >
+									<core:Item key="{Plant>code}" text="{Plant>text}" />
+							</ComboBox>
+						</VBox>
+					</layout:content>
+				</layout:Grid>
+
+				<Table id="idAssetTable"
+					width="auto"
+					class="sapUiTinyMargin"
+					inset="false"
+					alternateRowColors="true"
+					mode="SingleSelectLeft"
+					items="{
+						path: '/Assets/',
+						sorter: {
+							path: 'CmmsEquipmentDescription'
+						}
+					}" >
+					<headerToolbar>
+						<Toolbar
+							styleClass="toolbarBorderAll" >
+							<content>
+								<Text
+									width="15em" />
+								<ToolbarSpacer />
+								<Title
+									level="H2"
+									text="Assets" />
+								<ToolbarSpacer />
+								<SearchField id="idAssetSearch"
+									width="15em"
+									search="onAssetSearch" />
+							</content>
+						</Toolbar>
+					</headerToolbar>
+					<columns>
+						<Column
+							width="10%" >
+							<Text
+								text="Asset" />
+						</Column>
+						<Column
+							styleClass="cellBorderLeft"
+							width="40%" >
+							<Text
+								text="Description" />
+						</Column>
+						<Column
+							styleClass="cellBorderLeft"
+							width="25%" >
+							<Text
+								text="Progress" />
+						</Column>
+						<Column
+							styleClass="cellBorderLeft"
+							width="10%" >
+							<Text
+								text="Score" />
+						</Column>
+						<Column
+							styleClass="cellBorderLeft"
+							width="15%"
+							wrapping="false" >
+							<Text
+								text="Date" />
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem
+							vAlign="Middle"
+							type="None" >
+							<cells>
+								<Text
+									wrapping="false"
+									text="{AssetId}" />
+								<Text
+									wrapping="false"
+									text="{CmmsEquipmentDescription}" />
+								<ProgressIndicator
+									percentValue="{Analysis/Progress}"
+									displayValue="{Analysis/Progress}%"
+									showValue="true"
+									state="{= ${Analysis/Progress} === 0 ? 'None' : ${Analysis/Progress} === 100 ? 'Success' : 'Warning' }"
+									displayOnly="true" />
+								<Text
+									wrapping="false"
+									text="{Analysis/Score}" />
+								<Text
+									text="{
+										path: 'Analysis/Date',
+										type: 'sap.ui.model.type.Date'
+									}" />
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+
+			</content>
+
+			<footer>
+				<Bar class="sapContrast sapContrastPlus" >
+					<contentRight>
+						<Button id="idBtnHistory"
+							text="{i18n>Analysis_History}"
+							press="onHistoryPress" />
+						<Button id="idBtnStart"
+							type ="Accept"
+							text="{i18n>Analysis_Start}"
+							press="onStartPress" />
+						<Button id="idBtnCreate"
+							type="Emphasized"
+							text="{i18n>Analysis_Create}"
+							press="onCreatePress" />
+					</contentRight>
+				</Bar>
+			</footer>
+
+	</Page>
+</mvc:View>

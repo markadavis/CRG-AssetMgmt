@@ -1,0 +1,153 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "cargill.ui5.ahms.launchpad",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"dataSources": {
+			"mainService": {
+				"uri": "./webapp/config.json",
+				"type": "JSON"
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://detail-view",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "cargill.ui5.ahms.launchpad.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "idApp"
+		},
+		"dependencies": {
+			"minUI5Version": "1.42.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "cargill.ui5.ahms.launchpad.i18n.i18n"
+				}
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewPath": "cargill.ui5.ahms.launchpad.view",
+				"controlId": "rootControl",
+				"controlAggregation": "pages",
+				"viewType": "XML",
+				"async": true
+			},
+			"routes": [{
+				"pattern": "",
+				"name": "app",
+				"target": ["app"],
+				"greedy": false
+			}, {
+				"pattern": "Login",
+				"name": "login",
+				"target": ["login"],
+				"greedy": false
+			}, {
+				"pattern": "MaintainUser",
+				"name": "maintainUser",
+				"target": ["maintainUser"],
+				"greedy": false
+			}, {
+				"pattern": "Launchpad",
+				"name": "launchpad",
+				"target": ["launchpad"],
+				"greedy": false
+			}, {
+				"pattern": "{appId}",
+				"name": "fioriapp",
+				"target": ["fioriapp"],
+				"greedy": false
+			}],
+			"targets": {
+				"app": {
+					"viewName": "App",
+					"viewId": "idAppView",
+					"viewType": "XML"
+				},
+				"login": {
+					"viewName": "Login",
+					"viewId": "idLoginView",
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"controlAggregation": "pages",
+					"viewLevel": 1
+				},
+				"maintainUser": {
+					"viewName": "MaintainUser",
+					"viewId": "idMaintainUserView",
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"controlAggregation": "pages",
+					"viewLevel": 2
+				},
+				"launchpad": {
+					"viewName": "Launchpad",
+					"viewId": "idLaunchpadView",
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"controlAggregation": "pages",
+					"viewLevel": 1
+				},
+				"fioriapp": {
+					"viewName": "FioriApp",
+					"viewId": "idFioriAppView",
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"controlAggregation": "pages",
+					"viewLevel": 2
+				},
+	            "notFound": {
+					"viewName": "NotFound",
+					"viewId": "idNotFoundView",
+					"viewType": "XML",
+					"transition": "show",
+					"viewLevel": 9
+			     }
+			}
+		}
+	}
+}

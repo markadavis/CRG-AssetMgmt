@@ -1,0 +1,239 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="cargill.ui5.ahms.EquipmentQuestions.controller.Questions"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout"
+	xmlns="sap.m" 
+	displayBlock="true" >
+
+		<Page
+			title="{i18n>title}: Category"
+			showNavButton="true"
+			navButtonPress="onNavBack" >
+
+			<content>
+
+				<ObjectHeader
+					responsive="true"
+					fullScreenOptimized="true"
+					icon="sap-icon://folder"
+					binding="{Category>/}"
+					title="{Category>Name}"
+					intro="Weightage {Category>Weight}%" >
+					<attributes>
+						<ObjectAttribute
+							title="Enterprise"
+							text="{Category>EnterpriseText}"/>
+						<ObjectAttribute
+							title="Technology"
+							text="{Category>TechnologyText}"/>
+						<ObjectAttribute
+							title="Plant"
+							text="{Category>PlantText}"/>
+					</attributes>
+					<!--
+					<statuses>
+						<ObjectStatus
+							title="Enterprise"
+							text="{Category>EnterpriseId}"
+							state="None" />
+						<ObjectStatus
+							title="Technology"
+							text="{Category>TechnologyId}"
+							state="None" />
+						<ObjectStatus
+							title="Plant"
+							text="{Category>PlantId}" />
+					</statuses>
+					-->
+				</ObjectHeader>
+
+				<layout:VerticalLayout
+					class="equalColumns"
+					width="100%" >
+					<layout:content>
+
+						<FlexBox
+							width="100%"
+							alignItems="Stretch">
+							<items>
+
+								<Table id="idQuestionTable"
+									noDataText="No Questions Defined"
+									mode="SingleSelectMaster"
+									selectionChange="onQuestionRowSelect"
+									items="{
+										path: 'Question>/',
+										sorter: {
+											path: 'Text'
+										}
+									}" >
+
+									<headerToolbar>
+										<Toolbar
+											styleClass="toolbarBorderAll" >
+											<content>
+												<Title
+													level="H2"
+													text="Questions" />
+												<ToolbarSpacer />
+												<Button id="idQuestionAddBtn"
+													icon="sap-icon://add"
+													visible="false"
+													press="onQuestionAddPress" />
+												<Button id="idQuestionCancelBtn"
+													icon="sap-icon://decline"
+													visible="false"
+													press="onQuestionCancelPress" />
+												<Button id="idQuestionSaveBtn"
+													icon="sap-icon://accept"
+													visible="false"
+													press="onQuestionSavePress" />
+												<Button id="idQuestionEditBtn"
+													icon="sap-icon://edit"
+													visible="true"
+													press="onQuestionEditPress" />
+											</content>
+										</Toolbar>
+									</headerToolbar>
+
+									<columns>
+										<Column
+											hAlign="Start"
+											vAlign="Middle" />
+										<Column
+											width="3em"
+											hAlign="End"
+											styleClass="questionButtonColumn" />
+									</columns>
+
+									<items>
+										<ColumnListItem
+											vAlign="Middle"
+											type="Active">
+											<cells>
+												<Text
+													text="{Question>Text}" />
+												<Button
+													type="Transparent"
+													icon="sap-icon://sys-cancel"
+													visible="false"
+													press="onQuestionDeletePress" />
+											</cells>
+										</ColumnListItem>
+									</items>
+
+									<layoutData>
+										<FlexItemData growFactor="1" />
+									</layoutData>
+								</Table>
+
+								<Table id="idAnswerTable"
+									noDataText="No Answers Found"
+									mode="None"
+									items="{
+										path: 'Answer>/',
+										sorter: {
+											path: 'Weight'
+										}
+									}" >
+
+									<headerToolbar>
+										<Toolbar
+											styleClass="toolbarBorderAll" >
+											<content>
+												<Title
+													level="H2"
+													text="Answers" />
+												<ToolbarSpacer />
+												<Button id="idAnswerAddBtn"
+													icon="sap-icon://add"
+													visible="false"
+													press="onAnswerAddPress" />
+												<Button id="idAnswerCancelBtn"
+													icon="sap-icon://decline"
+													visible="false"
+													press="onAnswerCancelPress" />
+												<Button id="idAnswerSaveBtn"
+													icon="sap-icon://accept"
+													visible="false"
+													press="onAnswerSavePress" />
+												<Button id="idAnswerEditBtn"
+													icon="sap-icon://edit"
+													visible="true"
+													press="onAnswerEditPress" />
+
+											</content>
+										</Toolbar>
+									</headerToolbar>
+
+									<columns>
+										<Column id="idAnswerColumn1"
+											width="10%"
+											hAlign="Start"
+											vAlign="Middle" />
+										<Column id="idAnswerColumn2"
+											width="15%"
+											hAlign="Start"
+											vAlign="Middle" />
+										<Column id="idAnswerColumn3"
+											hAlign="Start"
+											width="70%"
+											vAlign="Middle" />
+										<Column
+											width="3em"
+											hAlign="End"
+											styleClass="questionButtonColumn" />
+									</columns>
+
+									<items>
+										<ColumnListItem
+											vAlign="Middle"
+											type="Inactive">
+											<cells>
+												<core:Icon
+													color="{Answer>Color}"
+													src="sap-icon://color-fill" />
+												<Text
+													text="{Answer>Weight}%" />
+												<Text
+													text="{Answer>Text}" />
+												<Button
+													type="Transparent"
+													icon="sap-icon://sys-cancel"
+													visible="false"
+													press="onAnswerDeletePress" />
+											</cells>
+										</ColumnListItem>
+									</items>
+
+									<layoutData>
+										<FlexItemData growFactor="1" />
+									</layoutData>
+								</Table>
+
+							</items>
+						</FlexBox>
+
+					</layout:content>
+				</layout:VerticalLayout>
+
+			</content>
+
+			<footer>
+			    <Bar>
+					<!--
+			        <contentRight>
+			            <Button id="idBtnCancel"
+							text="{i18n>app_Cancel}"
+							press="onNavBack" />
+			            <Button id="idBtnSave"
+							text="{i18n>app_Save}"
+							press="onSave" />
+			        </contentRight>
+					-->
+			    </Bar>
+			</footer>
+
+		</Page>
+</mvc:View>

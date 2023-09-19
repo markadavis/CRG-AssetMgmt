@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZAHMS_SERVICES" xml:lang="en" sap:schema-version="0000">
+			<EntityType Name="Enterprise">
+				<Key>
+					<PropertyRef Name="code"/>
+				</Key>
+				<Property Name="code" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Code"/>
+				<Property Name="text" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Text"/>
+				<NavigationProperty Name="Technologies" Relationship="ZAHMS_SERVICES.EnterpriseTechnologiesTechnology" FromRole="FromRole_EnterpriseTechnologiesTechnology" ToRole="ToRole_EnterpriseTechnologiesTechnology"/>
+			</EntityType>
+			<EntityType Name="Technology">
+				<Key>
+					<PropertyRef Name="code"/>
+				</Key>
+				<Property Name="code" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Code"/>
+				<Property Name="text" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Text"/>
+				<NavigationProperty Name="Plants" Relationship="ZAHMS_SERVICES.TechnologyPlantsPlant" FromRole="FromRole_TechnologyPlantsPlant" ToRole="ToRole_TechnologyPlantsPlant"/>
+				<NavigationProperty Name="Enterprise" Relationship="ZAHMS_SERVICES.TechnologyEnterpriseEnterprise" FromRole="FromRole_TechnologyEnterpriseEnterprise" ToRole="ToRole_TechnologyEnterpriseEnterprise"/>
+			</EntityType>
+			<EntityType Name="Plant">
+				<Key>
+					<PropertyRef Name="code"/>
+				</Key>
+				<Property Name="code" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Code"/>
+				<Property Name="text" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Text"/>
+				<NavigationProperty Name="Assets" Relationship="ZAHMS_SERVICES.PlantAssetsAsset" FromRole="FromRole_PlantAssetsAsset" ToRole="ToRole_PlantAssetsAsset"/>
+				<NavigationProperty Name="Technology" Relationship="ZAHMS_SERVICES.PlantTechnologyTechnology" FromRole="FromRole_PlantTechnologyTechnology" ToRole="ToRole_PlantTechnologyTechnology"/>
+			</EntityType>
+			<EntityType Name="Asset">
+				<Key>
+					<PropertyRef Name="AssetId"/>
+				</Key>
+				<Property Name="AssetId" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="AssetId"/>
+				<Property Name="EnterpriseId" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="EnterpriseId"/>
+				<Property Name="TechnologyId" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TechnologyId"/>
+				<Property Name="PlantId" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PlantId"/>
+				<Property Name="CmmsEquipmentNumber" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CmmsEquipmentNumber"/>
+				<Property Name="CmmsEquipmentDescription" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CmmsEquipmentDescription"/>
+				<Property Name="EquipmentClass" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="EquipmentClass"/>
+				<Property Name="CorporateAssetNumber" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CorporateAssetNumber"/>
+				<NavigationProperty Name="Plant" Relationship="ZAHMS_SERVICES.AssetPlantPlant" FromRole="FromRole_AssetPlantPlant" ToRole="ToRole_AssetPlantPlant"/>
+			</EntityType>
+			<Association Name="EnterpriseTechnologiesTechnology">
+				<End Type="ZAHMS_SERVICES.Enterprise" Multiplicity="1" Role="FromRole_EnterpriseTechnologiesTechnology"/>
+				<End Type="ZAHMS_SERVICES.Technology" Multiplicity="*" Role="ToRole_EnterpriseTechnologiesTechnology"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_EnterpriseTechnologiesTechnology">
+						<PropertyRef Name="code"/>
+					</Principal>
+					<Dependent Role="ToRole_EnterpriseTechnologiesTechnology">
+						<PropertyRef Name="code"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="TechnologyEnterpriseEnterprise">
+				<End Type="ZAHMS_SERVICES.Technology" Multiplicity="1" Role="FromRole_TechnologyEnterpriseEnterprise"/>
+				<End Type="ZAHMS_SERVICES.Enterprise" Multiplicity="1" Role="ToRole_TechnologyEnterpriseEnterprise"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_TechnologyEnterpriseEnterprise">
+						<PropertyRef Name="code"/>
+					</Principal>
+					<Dependent Role="FromRole_TechnologyEnterpriseEnterprise">
+						<PropertyRef Name="code"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="TechnologyPlantsPlant">
+				<End Type="ZAHMS_SERVICES.Technology" Multiplicity="1" Role="FromRole_TechnologyPlantsPlant"/>
+				<End Type="ZAHMS_SERVICES.Plant" Multiplicity="*" Role="ToRole_TechnologyPlantsPlant"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_TechnologyPlantsPlant">
+						<PropertyRef Name="code"/>
+					</Principal>
+					<Dependent Role="ToRole_TechnologyPlantsPlant">
+						<PropertyRef Name="code"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="PlantTechnologyTechnology">
+				<End Type="ZAHMS_SERVICES.Plant" Multiplicity="1" Role="FromRole_PlantTechnologyTechnology"/>
+				<End Type="ZAHMS_SERVICES.Technology" Multiplicity="1" Role="ToRole_PlantTechnologyTechnology"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_PlantTechnologyTechnology">
+						<PropertyRef Name="code"/>
+					</Principal>
+					<Dependent Role="FromRole_PlantTechnologyTechnology">
+						<PropertyRef Name="PlantId"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="PlantAssetsAsset">
+				<End Type="ZAHMS_SERVICES.Plant" Multiplicity="1" Role="FromRole_PlantAssetsAsset"/>
+				<End Type="ZAHMS_SERVICES.Asset" Multiplicity="*" Role="ToRole_PlantAssetsAsset"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_PlantAssetsAsset">
+						<PropertyRef Name="code"/>
+					</Principal>
+					<Dependent Role="ToRole_PlantAssetsAsset">
+						<PropertyRef Name="PlantId"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="AssetPlantPlant">
+				<End Type="ZAHMS_SERVICES.Asset" Multiplicity="1" Role="FromRole_AssetPlantPlant"/>
+				<End Type="ZAHMS_SERVICES.Plant" Multiplicity="1" Role="ToRole_AssetPlantPlant"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_AssetPlantPlant">
+						<PropertyRef Name="code"/>
+					</Principal>
+					<Dependent Role="FromRole_AssetPlantPlant">
+						<PropertyRef Name="PlantId"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityContainer Name="ZAHMS_SERVICES_Entities" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="EnterpriseSet" EntityType="ZAHMS_SERVICES.Enterprise" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+				<AssociationSet Name="EnterpriseTechnologiesTechnology" Association="ZAHMS_SERVICES.EnterpriseTechnologiesTechnology" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+					<End EntitySet="EnterpriseSet" Role="FromRole_EnterpriseTechnologiesTechnology"/>
+					<End EntitySet="TechnologySet" Role="ToRole_EnterpriseTechnologiesTechnology"/>
+				</AssociationSet>
+				<EntitySet Name="TechnologySet" EntityType="ZAHMS_SERVICES.Technology" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+				<AssociationSet Name="TechnologyPlantsPlant" Association="ZAHMS_SERVICES.TechnologyPlantsPlant" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+					<End EntitySet="TechnologySet" Role="FromRole_TechnologyPlantsPlant"/>
+					<End EntitySet="PlantSet" Role="ToRole_TechnologyPlantsPlant"/>
+				</AssociationSet>
+				<AssociationSet Name="TechnologyEnterpriseEnterprise" Association="ZAHMS_SERVICES.TechnologyEnterpriseEnterprise" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+					<End EntitySet="TechnologySet" Role="FromRole_TechnologyEnterpriseEnterprise"/>
+					<End EntitySet="EnterpriseSet" Role="ToRole_TechnologyEnterpriseEnterprise"/>
+				</AssociationSet>
+				<EntitySet Name="PlantSet" EntityType="ZAHMS_SERVICES.Plant" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+				<AssociationSet Name="PlantAssetsAsset" Association="ZAHMS_SERVICES.PlantAssetsAsset" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+					<End EntitySet="PlantSet" Role="FromRole_PlantAssetsAsset"/>
+					<End EntitySet="AssetSet" Role="ToRole_PlantAssetsAsset"/>
+				</AssociationSet>
+				<AssociationSet Name="PlantTechnologyTechnology" Association="ZAHMS_SERVICES.PlantTechnologyTechnology" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+					<End EntitySet="PlantSet" Role="FromRole_PlantTechnologyTechnology"/>
+					<End EntitySet="TechnologySet" Role="ToRole_PlantTechnologyTechnology"/>
+				</AssociationSet>
+				<EntitySet Name="AssetSet" EntityType="ZAHMS_SERVICES.Asset" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+				<AssociationSet Name="AssetPlantPlant" Association="ZAHMS_SERVICES.AssetPlantPlant" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+					<End EntitySet="AssetSet" Role="FromRole_AssetPlantPlant"/>
+					<End EntitySet="PlantSet" Role="ToRole_AssetPlantPlant"/>
+				</AssociationSet>
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

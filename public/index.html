@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="./launchpad/img/favicon.ico">
+
+	<link href="./launchpad/img/iOS/icon-180.png" rel="apple-touch-icon" sizes="180x180">
+	<link href="./launchpad/img/iOS/icon-120.png" rel="apple-touch-icon" sizes="120x120">
+	<link href="./launchpad/img/iOS/icon-114.png" rel="apple-touch-icon" sizes="114x114">
+	<link href="./launchpad/img/iOS/icon-114p.png" rel="apple-touch-icon">
+
+	<title>AHMS Launchpad</title>
+
+	<!-- Bootstrapping UI5 -->
+	<script id="sap-ui-bootstrap"
+			src="resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-preload="async"
+			data-sap-ui-resourceroots='{"cargill.ui5.ahms.launchpad": "./launchpad"}'
+			data-sap-ui-frameOptions="trusted">
+	</script>
+
+	<script>
+		sap.ui.getCore().attachInit(function () {
+			sap.ui.require([
+				"sap/m/Shell",
+				"sap/ui/core/ComponentContainer",
+				"sap/m/VBox"
+			], function (Shell, ComponentContainer, VBox) {
+
+				// initialize the UI component
+				var oLaunchpad = new Shell("idLaunchpadShell", {
+					app: new ComponentContainer({
+						height: "100%",
+						name: "cargill.ui5.ahms.launchpad",
+						settings: {
+							id: "launchpad"
+						}
+					})
+				});
+
+				new VBox("idComponentContainer", {
+					items: [oLaunchpad]
+				}).placeAt("idShell");
+
+			// 	new Shell("idLaunchpadShell", {
+			// 		app: new ComponentContainer({
+			// 			height: "100%",
+			// 			name: "cargill.ui5.ahms.launchpad",
+			// 			settings: {
+			// 				id: "launchpad"
+			// 			}
+			// 		})
+			// 	}).placeAt("idShell");
+
+			});
+		});
+	</script>
+
+</head>
+
+<!-- UI Content -->
+<body class="sapUiBody" id="idShell">
+</body>
+</html>

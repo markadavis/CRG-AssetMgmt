@@ -1,0 +1,38 @@
+[
+	{
+		"EnterpriseId": "1",
+		"TechnologyId": "1",
+		"PlantId": "1",
+		"CategoryId": "1",
+		"Name": "Safety Impact",
+		"Weight": 30
+	}, {
+		"EnterpriseId": "1",
+		"TechnologyId": "1",
+		"PlantId": "1",
+		"CategoryId": "2",
+		"Name": "Environmental Impact",
+		"Weight": 10
+	}, {
+		"EnterpriseId": "1",
+		"TechnologyId": "1",
+		"PlantId": "1",
+		"CategoryId": "3",
+		"Name": "Customer and Quality Impact",
+		"Weight": 10
+	}, {
+		"EnterpriseId": "1",
+		"TechnologyId": "1",
+		"PlantId": "1",
+		"CategoryId": "4",
+		"Name": "Operational Impact",
+		"Weight": 35
+	}, {
+		"EnterpriseId": "1",
+		"TechnologyId": "1",
+		"PlantId": "1",
+		"CategoryId": "5",
+		"Name": "Food Safety Impact",
+		"Weight": 35
+	}
+]

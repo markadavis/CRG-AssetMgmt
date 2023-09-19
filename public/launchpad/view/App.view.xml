@@ -1,0 +1,9 @@
+<View
+	controllerName="cargill.ui5.ahms.launchpad.controller.App"
+	xmlns="sap.m">
+	<App id="rootControl" >
+		<pages>
+			
+		</pages>
+	</App>
+</View>

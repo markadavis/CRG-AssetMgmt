@@ -1,0 +1,147 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="cargill.ui5.ahms.EquipmentQuestions.controller.Main"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout"
+	xmlns="sap.m" 
+	displayBlock="true" >
+
+		<Page
+			title="{i18n>title}"
+			showNavButton="true"
+			navButtonPress="onNavBack" >
+
+			<content>
+
+				<layout:Grid
+					class="sapUiSmallMargin"
+					defaultSpan="L4 M6 S8" >
+					<layout:content>
+						<VBox>
+							<Label text="Enterprise" />
+							<ComboBox id="idEnterprise"
+								selectionChange="onCategoryChange"
+								items="{
+									path: 'Enterprise>/',
+										sorter: { path: 'text' }
+									}" >
+									<core:Item key="{Enterprise>code}" text="{Enterprise>text}" />
+							</ComboBox>
+						</VBox>
+						<VBox>
+							<Label text="Technology" />
+							<ComboBox id="idTechnology"
+								selectionChange="onCategoryChange"
+								items="{
+									path: 'Technology>/',
+										sorter: { path: 'text' }
+									}" >
+									<core:Item key="{Technology>code}" text="{Technology>text}" />
+							</ComboBox>
+						</VBox>
+						<VBox>
+							<Label text="Plant" />
+							<ComboBox id="idPlant"
+								selectionChange="onCategoryChange"
+								items="{
+									path: 'Plant>/',
+										sorter: { path: 'text' }
+									}" >
+									<core:Item key="{Plant>code}" text="{Plant>text}" />
+							</ComboBox>
+						</VBox>
+					</layout:content>
+				</layout:Grid>
+
+				<Table id="idCategoryTable"
+					width="auto"
+					class="sapUiTinyMargin"
+					inset="false"
+					mode="SingleSelectMaster"
+					selectionChange="onRowSelection"
+					items="{
+						path: 'Category>/',
+						sorter: {
+							path: 'Name'
+						}
+					}" >
+					<headerToolbar>
+						<Toolbar
+							styleClass="toolbarBorderAll" >
+							<content>
+								<Button />
+								<Button />
+								<ToolbarSpacer />
+								<Title
+									level="H2"
+									text="Categories" />
+								<ToolbarSpacer />
+								<Button id="idCategoryCancelBtn"
+									icon="sap-icon://decline"
+									visible="false"
+									press="onCategoryCancelPress" />
+								<Button id="idCategorySaveBtn"
+									icon="sap-icon://accept"
+									visible="false"
+									press="onCategorySavePress" />
+								<Button id="idCategoryEditBtn"
+									icon="sap-icon://edit"
+									visible="true"
+									enabled="flase"
+									press="onCategoryEditPress" />
+								<Button id="idCategoryPrintBtn"
+									icon="sap-icon://print"
+									visible="true"
+									enabled="flase"
+									press="onCategoryPrintPress" />
+							</content>
+						</Toolbar>
+					</headerToolbar>
+					<columns>
+						<Column
+							width="50%"
+							styleClass="cellBorderLeft cellBorderRight" >
+							<Text
+								text="Name of Category" />
+						</Column>
+						<Column
+							width="50%"
+							styleClass="cellBorderRight" >
+							<Text text="Weightage (%)" />
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem
+							vAlign="Middle"
+							type="Navigation" >
+							<cells>
+								<Text
+									wrapping="false"
+									text="{Category>Name}" />
+								<Text
+									wrapping="false"
+									text="{Category>Weight}" />
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+
+			</content>
+
+			<footer>
+			    <Bar class="sapContrast sapContrastPlus" >
+					<!--
+			        <contentRight>
+			            <Button id="idBtnCancel"
+							text="{i18n>app_Cancel}"
+							press="onNavBack" />
+			            <Button id="idBtnSave"
+							text="{i18n>app_Save}"
+							press="onSave" />
+			        </contentRight>
+					-->
+			    </Bar>
+			</footer>
+
+		</Page>
+</mvc:View>

@@ -1,0 +1,48 @@
+[
+	{
+		"EnterpriseId": "1",
+		"PlantId": "1",
+		"TechnologyId": "1",
+		"AssetId": "1",
+		"CategoryId": "1",
+		"Date": "Thu May 31 2018 15:37:39 GMT-0400 (EDT)",
+		"Progress": 65,
+		"Score": 220
+	}, {
+		"EnterpriseId": "1",
+		"PlantId": "1",
+		"TechnologyId": "1",
+		"AssetId": "1",
+		"CategoryId": "2",
+		"Date": "Thu May 31 2018 15:37:39 GMT-0400 (EDT)",
+		"Progress": 75,
+		"Score": 205
+	}, {
+		"EnterpriseId": "1",
+		"PlantId": "1",
+		"TechnologyId": "1",
+		"AssetId": "1",
+		"CategoryId": "3",
+		"Date": "Thu May 31 2018 15:37:39 GMT-0400 (EDT)",
+		"Progress": 100,
+		"Score": 225
+	}, {
+		"EnterpriseId": "1",
+		"PlantId": "1",
+		"TechnologyId": "1",
+		"AssetId": "1",
+		"CategoryId": "4",
+		"Date": "Thu May 31 2018 15:37:39 GMT-0400 (EDT)",
+		"Progress": 45,
+		"Score": 180
+	}, {
+		"EnterpriseId": "1",
+		"PlantId": "1",
+		"TechnologyId": "1",
+		"AssetId": "1",
+		"CategoryId": "5",
+		"Date": "Thu May 31 2018 15:37:39 GMT-0400 (EDT)",
+		"Progress": 0,
+		"Score": 190
+	}
+]

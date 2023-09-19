@@ -1,0 +1,1053 @@
+[
+	{
+		"CategoryId": "1",
+		"QuestionId": "1",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "1",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "1",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "1",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "1",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "1",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "1",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "1",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "1",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "1",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "1",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "1",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "1",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "1",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "1",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "1",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "1",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "1",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "1",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "1",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "1",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "1",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "1",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "1",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "1",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "2",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "2",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "2",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "2",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "2",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "2",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "2",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "2",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "2",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "2",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "2",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "2",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "2",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "2",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "2",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "2",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "2",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "2",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "2",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "2",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "2",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "2",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "2",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "2",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "2",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "3",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "3",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "3",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "3",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "3",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "3",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "3",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "3",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "3",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "3",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "3",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "3",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "3",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "3",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "3",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "3",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "3",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "3",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "3",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "3",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "3",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "3",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "3",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "3",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "3",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "4",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "4",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "4",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "4",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "4",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "4",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "4",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "4",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "4",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "4",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "4",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "4",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "4",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "4",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "4",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "4",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "4",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "4",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "4",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "4",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "4",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "4",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "4",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "4",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "4",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "5",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "5",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "5",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "5",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "5",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "5",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "5",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "5",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "5",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "5",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "5",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "5",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "5",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "5",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "5",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "5",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "5",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "5",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "5",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "5",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "5",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "5",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "5",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "5",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "5",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "6",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "6",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "6",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "6",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "6",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "6",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "6",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "6",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "6",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "6",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "6",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "6",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "6",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "6",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "6",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "6",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "6",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "6",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "6",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "6",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "6",
+		"AnswerId": "1",
+		"Color": "lightgrey",
+		"Weight": 0,
+		"Text": "Equipment has no critical safety devices"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "6",
+		"AnswerId": "2",
+		"Color": "darkgrey",
+		"Weight": 25,
+		"Text": "Equipment has unsafe environmental conditions"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "6",
+		"AnswerId": "3",
+		"Color": "grey",
+		"Weight": 50,
+		"Text": "Equipment has a non critical safety device interlock"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "6",
+		"AnswerId": "4",
+		"Color": "dimgrey",
+		"Weight": 75,
+		"Text": "Equipment has critical safety"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "6",
+		"AnswerId": "5",
+		"Color": "black",
+		"Weight": 100,
+		"Text": "Equipment is a critical safety device"
+	}
+]

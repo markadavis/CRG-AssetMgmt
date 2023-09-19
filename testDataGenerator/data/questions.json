@@ -1,0 +1,123 @@
+[
+	{
+		"CategoryId": "1",
+		"QuestionId": "1",
+		"Text": "Critical Safety Devices"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "2",
+		"Text": "Injury Potential"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "3",
+		"Text": "Fire/Explosion Potential"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "4",
+		"Text": "Less Potential"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "5",
+		"Text": "Safety During maintenance"
+	}, {
+		"CategoryId": "1",
+		"QuestionId": "6",
+		"Text": "Likelyhood of Failure"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "1",
+		"Text": "Critical Safety Devices"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "2",
+		"Text": "Injury Potential"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "3",
+		"Text": "Fire/Explosion Potential"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "4",
+		"Text": "Less Potential"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "5",
+		"Text": "Safety During maintenance"
+	}, {
+		"CategoryId": "2",
+		"QuestionId": "6",
+		"Text": "Likelyhood of Failure"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "1",
+		"Text": "Critical Safety Devices"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "2",
+		"Text": "Injury Potential"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "3",
+		"Text": "Fire/Explosion Potential"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "4",
+		"Text": "Less Potential"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "5",
+		"Text": "Safety During maintenance"
+	}, {
+		"CategoryId": "3",
+		"QuestionId": "6",
+		"Text": "Likelyhood of Failure"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "1",
+		"Text": "Critical Safety Devices"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "2",
+		"Text": "Injury Potential"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "3",
+		"Text": "Fire/Explosion Potential"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "4",
+		"Text": "Less Potential"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "5",
+		"Text": "Safety During maintenance"
+	}, {
+		"CategoryId": "4",
+		"QuestionId": "6",
+		"Text": "Likelyhood of Failure"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "1",
+		"Text": "Critical Safety Devices"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "2",
+		"Text": "Injury Potential"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "3",
+		"Text": "Fire/Explosion Potential"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "4",
+		"Text": "Less Potential"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "5",
+		"Text": "Safety During maintenance"
+	}, {
+		"CategoryId": "5",
+		"QuestionId": "6",
+		"Text": "Likelyhood of Failure"
+	}
+]

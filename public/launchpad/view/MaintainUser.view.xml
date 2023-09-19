@@ -1,0 +1,74 @@
+<mvc:View
+	controllerName="cargill.ui5.ahms.launchpad.controller.MaintainUser"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout"
+	xmlns:form="sap.ui.layout.form" >
+
+	<Page id="idMaintainUserPage"
+		showHeader="true"
+		title="User Maintenance"
+		showNavButton="true"
+		navButtonPress="onNavBack"
+		enableScrolling="false" >
+
+		<content>
+			<VBox class="sapUiSmallMargin">
+				<form:SimpleForm
+					editable="true"
+					layout="ResponsiveGridLayout"
+					singleContainerFullSize="true"
+					labelSpanXL="3"
+					labelSpanL="3"
+					labelSpanM="3"
+					labelSpanS="12"
+					adjustLabelSpan="false"
+					emptySpanXL="4"
+					emptySpanL="4"
+					emptySpanM="4"
+					emptySpanS="0"
+					columnsXL="1"
+					columnsL="1"
+					columnsM="1" >
+
+					<form:content>
+
+						<Label
+							text="Cargill User ID" />
+						<Input 
+							value="{/userId}" />
+
+						<Label
+							text="Email Address" />
+						<Input
+							value="{/email}" />
+
+						<Label
+							text="Password" />
+						<Input
+							value="{/password}" />
+
+					</form:content>
+				</form:SimpleForm>	
+			</VBox>
+		</content>
+
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer />
+				<Button
+					type="Reject"
+					text="Delete User"
+					press="handleDeleteUserPress" />
+
+				<Button
+					type="Accept"
+					text="Create User"
+					press="handleCreateUserPress" />
+				</Toolbar>
+		</footer>
+
+	</Page>
+
+</mvc:View>

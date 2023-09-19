@@ -1,0 +1,38 @@
+[
+	{
+		"numberRangeId": "Enterprise",
+		"numberLength": 10,
+		"zeroFill": true,
+		"nextNumber": 1
+	}, {
+		"numberRangeId": "Plant",
+		"numberLength": 10,
+		"zeroFill": true,
+		"nextNumber": 1
+	}, {
+		"numberRangeId": "Technology",
+		"numberLength": 10,
+		"zeroFill": true,
+		"nextNumber": 1
+	}, {
+		"numberRangeId": "Asset",
+		"numberLength": 10,
+		"zeroFill": true,
+		"nextNumber": 1
+	}, {
+		"numberRangeId": "Category",
+		"numberLength": 10,
+		"zeroFill": true,
+		"nextNumber": 1
+	}, {
+		"numberRangeId": "Question",
+		"numberLength": 10,
+		"zeroFill": true,
+		"nextNumber": 1
+	}, {
+		"numberRangeId": "Answer",
+		"numberLength": 10,
+		"zeroFill": true,
+		"nextNumber": 1
+	}
+]

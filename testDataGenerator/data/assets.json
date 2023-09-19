@@ -1,0 +1,73 @@
+[
+	{
+		"AssetId": "0",
+		"EnterpriseId": "0",
+		"TechnologyId": "0",
+		"PlantId": "0",
+		"CmmsEquipmentNumber": "0000000-000",
+		"CmmsEquipmentDescription": "Eqpuipment description for the 0's",
+		"EquipmentClass": "Widget",
+		"CorporateAssetNumber": "11111-11-1111111",
+		"Analysis": {
+			"Date" : "Thu May 31 2018 15:28:49 GMT-0400 (EDT)",
+			"Progress": 25,
+			"Score": 230
+		}
+	}, {
+		"AssetId": "1",
+		"EnterpriseId": "1",
+		"TechnologyId": "1",
+		"PlantId": "1",
+		"CmmsEquipmentNumber": "1111111-111",
+		"CmmsEquipmentDescription": "Eqpuipment description for the 1's",
+		"EquipmentClass": "Widget",
+		"CorporateAssetNumber": "22222-22-2222222",
+		"Analysis": {
+			"Date" : "Thu May 31 2018 15:28:49 GMT-0400 (EDT)",
+			"Progress": 85,
+			"Score": 202
+		}
+	}, {
+		"AssetId": "2",
+		"EnterpriseId": "2",
+		"TechnologyId": "2",
+		"PlantId": "2",
+		"CmmsEquipmentNumber": "2222222-222",
+		"CmmsEquipmentDescription": "Eqpuipment description for the 2's",
+		"EquipmentClass": "Widget",
+		"CorporateAssetNumber": "33333-33-3333333",
+		"Analysis": {
+			"Date" : "Thu May 31 2018 15:28:49 GMT-0400 (EDT)",
+			"Progress": 100,
+			"Score": 195
+		}
+	}, {
+		"AssetId": "3",
+		"EnterpriseId": "3",
+		"TechnologyId": "3",
+		"PlantId": "3",
+		"CmmsEquipmentNumber": "3333333-333",
+		"CmmsEquipmentDescription": "Eqpuipment description for the 3's",
+		"EquipmentClass": "Widget",
+		"CorporateAssetNumber": "44444-44-4444444",
+		"Analysis": {
+			"Date" : "Thu May 31 2018 15:28:49 GMT-0400 (EDT)",
+			"Progress": 75,
+			"Score": 305
+		}
+	}, {
+		"AssetId": "4",
+		"EnterpriseId": "4",
+		"TechnologyId": "4",
+		"PlantId": "4",
+		"CmmsEquipmentNumber": "4444444-444",
+		"CmmsEquipmentDescription": "Eqpuipment description for the 4's",
+		"EquipmentClass": "Widget",
+		"CorporateAssetNumber": "55555-55-5555555",
+		"Analysis": {
+			"Date" : "Thu May 31 2018 15:28:49 GMT-0400 (EDT)",
+			"Progress": 65,
+			"Score": 260
+		}
+	}
+]
